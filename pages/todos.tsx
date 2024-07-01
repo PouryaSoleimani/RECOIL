@@ -29,9 +29,12 @@ const TodosPage = () => {
           <h1 className='text-center mt-6 font-extrabold text-3xl text-red-900 bg-red-200/80 w-1/2 mx-auto py-5 rounded-xl'>NO TASKS</h1>
         ) : (
           todos.map((item: any) => (
-            <h1>item.title</h1>
+            <h1 className='text-center bg-blue-800/30 w-1/3 rounded-xl border my-2 text-3xl font-extrabold  mx-auto py-3'>{item.title}</h1>
           ))
         )}
+        <div className='flex items-center justify-center mt-10'>
+          <button onClick={event => setTodos([])} className='bg-red-700 py-[8px] text-xl font-bold px-6 rounded-lg mx-auto '>Delete All Todos</button>
+        </div>
       </div>
     </div>
   )
