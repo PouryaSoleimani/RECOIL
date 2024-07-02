@@ -7,6 +7,7 @@ const TodosPage = () => {
   const [todos, setTodos] = useRecoilState(TODOS)
   const [todoTitle, setTodoTitle] = useState('')
 
+  //^ SUBMIT HANDLER 
   function submitHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const mainTodo = { id: uuid(), title: todoTitle, isCompleted: false }
