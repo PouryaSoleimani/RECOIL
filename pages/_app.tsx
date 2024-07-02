@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import dynamic from "next/dynamic";
-import { RecoilRoot } from "recoil";
+
 //^ DYNAMIC IMPORT OF RECOIL
 const RECOILROOT = dynamic(() => import('./recoilContextProvider'), { ssr: false })
 
